@@ -1,0 +1,17 @@
+body{
+    background-color: #0F0F0F;
+    color:#fff
+  }
+  /* Add this CSS in your global styles or in a dedicated CSS module */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-logo {
+  animation: rotateAnimation 5s linear infinite;
+}
