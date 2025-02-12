@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <div className='w-full flex justify-between items-center p-4 sm:p-6 sm:px-24 absolute top-0'>
       {/* Adjusted logo size */}
-      <img src={assets.chat_logo} alt='logo' className='w-25 sm:w-20' />
+    
 
       
       {userdata ? (
