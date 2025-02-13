@@ -150,7 +150,7 @@ const ResetPassword = () => {
             <input
               type="password"
               placeholder="Password"
-              className="bg-transparent outline-none text-white w-full py-1.5 pl-2"
+              className="bg-[#1f1f20] outline-none text-white w-full py-1.5 pl-2"
               value={newpassword}
               onChange={(e) => setNewPassword(e.target.value)}
               required
