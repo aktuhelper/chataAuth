@@ -142,15 +142,15 @@ const ResetPassword = () => {
       )}
 
       {isOtpSubmit && isEmailSent && (
-        <form onSubmit={onSubmitNewPassword} className="bg-slate-900 p-6 rounded-lg shadow-lg w-96 text-sm">
+        <form onSubmit={onSubmitNewPassword} className="bg-[#1A1A1A] p-6 rounded-lg shadow-lg w-96 text-sm">
           <h1 className="text-white text-2xl font-semibold text-center mb-4">New Password</h1>
           <p className="text-center mb-6 text-indigo-300">Enter new password</p>
-          <div className="mb-4 flex items-center gap-3 w-full px-5 py-2 rounded-full bg-[#333A5C]">
+          <div className="mb-4 flex items-center gap-3 w-full px-5 py-2 rounded-full bg-[#1A1A1A] ">
             <img src={assets.lock_icon} alt="" className="w-5 h-5" />
             <input
               type="password"
               placeholder="Password"
-              className="bg-[#1f1f20] outline-none text-white w-full py-1.5 pl-2"
+              className="bg-transparent outline-none text-white w-full py-1.5 pl-2"
               value={newpassword}
               onChange={(e) => setNewPassword(e.target.value)}
               required
