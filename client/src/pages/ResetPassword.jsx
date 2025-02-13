@@ -79,7 +79,6 @@ const ResetPassword = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen ">
-     
       {/* Enter email Id */}
       {!isEmailSent && (
         <form onSubmit={onSubmitEmail} className="bg-[#1A1A1A] p-6 rounded-lg shadow-lg w-96 text-sm">
@@ -90,7 +89,7 @@ const ResetPassword = () => {
             <input
               type="email"
               placeholder="Enter your Email Id"
-              className="bg-transparent outline-none text-white w-full py-1.5 pl-2"
+              className="bg-[#1f1f20] outline-none text-white w-full py-1.5 pl-2"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -109,7 +108,7 @@ const ResetPassword = () => {
         </form>
       )}
       {!isOtpSubmit && isEmailSent && (
-        <form onSubmit={onSubmitOtp} className="bg-slate-900 p-6 rounded-lg shadow-lg w-96 text-sm">
+        <form onSubmit={onSubmitOtp} className="bg-[#1A1A1A] p-6 rounded-lg shadow-lg w-96 text-sm">
           <h1 className="text-white text-2xl font-semibold text-center mb-4">Reset Password OTP</h1>
           <p className="text-center mb-6 text-indigo-300">Enter 6 digit code sent to your Email</p>
 
@@ -122,14 +121,14 @@ const ResetPassword = () => {
                   maxLength="1"
                   key={index}
                   required
-                  className="w-10 h-10 bg-[#333A5C] text-white text-center text-xl rounded-md"
+                  className="w-10 h-10 bg-[#1f1f20] text-white text-center text-xl rounded-md"
                   ref={(e) => (inputRefs.current[index] = e)}
                   onInput={(e) => handleInput(e, index)}
                   onKeyDown={(e) => handleKeyDown(e, index)}
                 />
               ))}
           </div>
-          <button className="w-full py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-900 text-white rounded-full">
+          <button className="w-full py-2.5  bg-gradient-to-r from-red-500 to-red-900 text-white rounded-full">
             {loading ? (  // Display Loader2 spinner while loading
               <div className="flex justify-center items-center">
                 <Loader2 className="animate-spin mr-2" size={24} />
@@ -157,7 +156,7 @@ const ResetPassword = () => {
               required
             />
           </div>
-          <button className="w-full py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-900 text-white rounded-full">
+          <button className="w-full py-2.5  bg-gradient-to-r from-red-500 to-red-900 text-white rounded-full">
             {loading ? (  // Display Loader2 spinner while loading
               <div className="flex justify-center items-center">
                 <Loader2 className="animate-spin mr-2" size={24} />
